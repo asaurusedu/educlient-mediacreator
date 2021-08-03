@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head HTML -->
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <%= require('../../components/head.html?raw') %>
+  </head>
+
+  <body>
+    <h1>Push Materi Pages</h1>
+    <div class="container mb-5" style="margin: 10px 10px 10px 10px">
+      <div class="row">
+        <div class="form-group" style="margin: 10px 10px 10px 10px">
+          <label>Kelas</label>
+          <select class="form-control" name="kelas" id="kelas">
+            <option value="">Pilih Kelas</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin: 10px 10px 10px 10px">
+          <label>Mata Pelajaran</label>
+          <select class="form-control" name="matpel" id="matpel">
+            <option value="">Pilih Mata Pelajaran</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin: 10px 10px 10px 10px">
+          <label>Materi</label>
+          <select class="form-control" name="materi" id="materi">
+            <option value="">Pilih Materi</option>
+          </select>
+        </div>
+
+        <input
+          class="form-control"
+          id="tujuan"
+          style="margin: 10px 10px 10px 10px"
+          placeholder="Isi Tujuan Umum Anda"
+        />
+
+        <input
+          class="form-control"
+          id="tujuan"
+          style="margin: 10px 10px 10px 10px"
+          placeholder="Isi Tujuan Khusus Anda"
+        />
+      </div>
+
+      <button class="btn-warning" type="button">Click Me!</button>
+    </div>
+    <script src="./pullformdata.bundle.js" type="text/javascript"></script>
+    <script src="./getmateri.bundle.js" type="text/javascript"></script>
+    </script>
+  </body>
+</html>
